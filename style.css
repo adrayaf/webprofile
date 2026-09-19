@@ -14,6 +14,18 @@
     --warna-kartu: #ffffff;
 }
 
+/* ===== ANIMASI ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* ===== BODY ===== */
 body {
     font-family: 'Poppins', Arial, sans-serif;
@@ -115,6 +127,7 @@ section {
     background-color: var(--warna-bg);
     border-radius: 15px;
     border-left: 5px solid var(--warna-utama);
+    animation: fadeInUp 0.6s ease-out backwards;
 }
 
 section h2 {
@@ -126,6 +139,11 @@ section h2 {
 section p {
     margin-bottom: 8px;
 }
+
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+section:nth-child(4) { animation-delay: 0.4s; }
 
 ul {
     margin-left: 25px;
@@ -177,26 +195,6 @@ footer {
     opacity: 0.7;
     margin-top: 5px;
 }
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    animation: fadeInUp 0.6s ease-out backwards;
-}
-
-section:nth-child(1) { animation-delay: 0.1s; }
-section:nth-child(2) { animation-delay: 0.2s; }
-section:nth-child(3) { animation-delay: 0.3s; }
-section:nth-child(4) { animation-delay: 0.4s; }
 
 /* ===== RESPONSIVE (HP) ===== */
 @media (max-width: 600px) {
