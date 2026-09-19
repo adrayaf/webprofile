@@ -1,0 +1,177 @@
+/* ===== RESET DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIABEL WARNA ===== */
+:root {
+    --warna-utama: #ff6b9d;
+    --warna-kedua: #c44569;
+    --warna-bg: #fff5f7;
+    --warna-teks: #2d3436;
+    --warna-kartu: #ffffff;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--warna-bg);
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 157, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(196, 69, 105, 0.1) 0%, transparent 50%);
+    color: var(--warna-teks);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.5s;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: var(--warna-kartu);
+    border: 3px solid var(--warna-utama);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 8px 8px 0 var(--warna-kedua);
+    transition: all 0.5s;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed var(--warna-utama);
+}
+
+header h1 {
+    font-size: 32px;
+    color: var(--warna-kedua);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--warna-utama);
+    font-size: 14px;
+}
+
+/* ===== NAVIGASI ===== */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--warna-teks);
+    background-color: var(--warna-bg);
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 2px solid var(--warna-utama);
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--warna-utama);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== SECTION ===== */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--warna-bg);
+    border-radius: 15px;
+    border-left: 5px solid var(--warna-utama);
+}
+
+section h2 {
+    color: var(--warna-kedua);
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+ul {
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: var(--warna-kedua);
+}
+
+/* ===== TOMBOL ===== */
+button {
+    background-color: var(--warna-utama);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--warna-kedua);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px dashed var(--warna-utama);
+    font-size: 14px;
+    color: var(--warna-kedua);
+}
+
+.small {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* ===== RESPONSIVE (HP) ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    nav {
+        gap: 6px;
+    }
+    
+    nav a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
