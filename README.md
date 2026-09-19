@@ -13,7 +13,7 @@ Website profil pribadi yang dibuat sambil belajar HTML, CSS, dan JavaScript.
 - JavaScript murni (tanpa framework)
 
 ## Live
-https://github.com/adrayaf/webprofile.git
+https://adrayaf.github.io/webprofile/
 
 ## Dibuat oleh
 Adrayaf
